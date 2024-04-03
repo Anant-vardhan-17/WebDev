@@ -1,0 +1,162 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   background-color: #f2f2f2;
+}
+
+.head {
+   width: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   margin: 20px auto;
+}
+
+.head h1 {
+   font-size: 50px;
+   color: #000;
+   margin-bottom: 25px;
+}
+
+.head h1:after {
+   content: "";
+   position: absolute;
+   width: 47%;
+   height: 4px;
+   display: block;
+   margin: 10px auto;
+   background-color: #4caf50;
+}
+
+.content-about{
+   flex: 1;
+}
+
+.content-about p {
+   text-align: left;
+   font-size: 18px;
+   line-height: 2;
+   color: #666;
+ }
+
+.heading {
+   width: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   margin: 20px auto;
+}
+
+
+.heading h1 {
+   font-size: 50px;
+   color: #000;
+   margin-bottom: 25px;
+}
+
+.heading h1::after {
+   content: "";
+   position: absolute;
+   width: 17%;
+   height: 4px;
+   display: block;
+   margin: 0px auto;
+   background-color: #4caf50;
+}
+
+.heading p {
+   font-size: 18px;
+   color: #666;
+   margin-bottom: 5px;
+}
+
+.container {
+   width: 90%;
+   margin: 0px auto;
+   padding: 10px 20px;
+}
+
+.about {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.about-content {
+   flex: 1;
+}
+
+.about-content p {
+   font-size: 18px;
+   line-height: 2;
+   color: #666;
+}
+
+.about-content .read-more {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #4caf50;
+   color: #fff;
+   font-size: 19px;
+   text-decoration: none;
+   border-radius: 25px;
+   margin-top: 15px;
+   transition: 0.3s ease;
+}
+
+.about-content .read-more:hover {
+   background-color: #3e8e41;
+}
+
+
+@media screen and (max-width: 768px) {
+   .heading {
+       padding: 0px 20px;
+   }
+
+   .heading h1 {
+       font-size: 36px;
+   }
+
+   .head {
+       padding: 0px 20px;
+   }
+
+   .head h1 {
+       font-size: 36px;
+   }
+
+   .heading p {
+       font-size: 17px;
+       margin-bottom: 0px;
+   }
+
+   .container {
+       padding: 0px;
+   }
+
+   .about {
+       padding: 20px;
+       flex-direction: column;
+   }
+
+   .about-content p {
+       padding: 0px;
+       font-size: 16px;
+   }
+
+   .about-content .read-more {
+       font-size: 16px;
+      }
+   }
+   
